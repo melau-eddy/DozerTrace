@@ -25,33 +25,36 @@ long txDelay= 0x00;								// delay time on top of server TMST
 #define SPISPEED 8000000						// was 50000/50KHz < 10MHz
 
 // Frequencies
-// Set center frequency. If in doubt, choose the first one, comment all others
-// Each "real" gateway should support the first 3 frequencies according to LoRa spec.
+// Set center frequency. If in doubt, choose the first one and comment out the rest.
+// Each "real" LoRa gateway should support the first 3 frequencies according to the LoRa specification.
 
-//int freqs [] = { 
-//	868100000, 									// Channel 0, 868.1 MHz primary
-//	868300000, 									// Channel 1, 868.3 MHz mandatory
-//	868500000, 									// Channel 2, 868.5 MHz mandatory
-//	867100000, 									// Channel 3, 867.1 MHz
-//	867300000, 
-//	867500000, 
-//	867700000, 
-//	867900000, 
-//	868800000, 
-//	869525000									// Channel, for responses gateway (10%)
-//	// TTN defines an additional channel at 869.525Mhz using SF9 for class B. Not used
-//};
-//int freqs [] = { 
-//    433175000, 									// Channel 0, 433.1 MHz primary
-//    433375000, 									// Channel 1, 433.3 MHz mandatory
-//    433575000, 									// Channel 2, 433.5 MHz mandatory
-//    433775000, 									// Channel 3, 433.7 MHz
-//    433975000, 
-//    434175000, 
-//    434375000, 
-//    434575000, 
-//    434775000, 
-//};
+// 868 MHz Band (EU868)
+// int freqs[] = {  
+//     868100000, // Channel 0 - 868.1 MHz (Primary)
+//     868300000, // Channel 1 - 868.3 MHz (Mandatory)
+//     868500000, // Channel 2 - 868.5 MHz (Mandatory)
+//     867100000, // Channel 3 - 867.1 MHz
+//     867300000, // Channel 4 - 867.3 MHz
+//     867500000, // Channel 5 - 867.5 MHz
+//     867700000, // Channel 6 - 867.7 MHz
+//     867900000, // Channel 7 - 867.9 MHz
+//     868800000, // Channel 8 - 868.8 MHz
+//     869525000  // Channel 9 - 869.525 MHz (10% duty cycle, used for downlinks)
+// };
+
+// 433 MHz Band (EU433)
+// int freqs[] = {  
+//     433175000, // Channel 0 - 433.175 MHz (Primary)
+//     433375000, // Channel 1 - 433.375 MHz (Mandatory)
+//     433575000, // Channel 2 - 433.575 MHz (Mandatory)
+//     433775000, // Channel 3 - 433.775 MHz
+//     433975000, // Channel 4 - 433.975 MHz
+//     434175000, // Channel 5 - 434.175 MHz
+//     434375000, // Channel 6 - 434.375 MHz
+//     434575000, // Channel 7 - 434.575 MHz
+//     434775000  // Channel 8 - 434.775 MHz
+// };
+
 int freqs [] = {
   902300000,
   903000000,
