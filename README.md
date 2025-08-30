@@ -3,7 +3,7 @@
 **DozerTrace** is a smart, Arduino-based tracking system designed for earth-moving machinery like bulldozers, excavators, and loaders. It combines GPS and motion sensors with a companion mobile app to deliver real-time location tracking, activity monitoring, and remote control capabilities.
 
 ---
-
+ 
 ## 🔧 Features
 
 - 📍 **Real-time GPS tracking**
