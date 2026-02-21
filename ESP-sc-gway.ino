@@ -1,4 +1,4 @@
-// 1-channel LoRa Gateway for ESP8266
+// 1-channel LoRa Gateway for ESP8266 
 // Copyright (c) 2016, 2017 Maarten Westenberg version for ESP8266
 // Version 5.0.1
 // Date: 2017-11-15
